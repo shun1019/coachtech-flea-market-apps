@@ -1,10 +1,10 @@
-# mogitate
+# coachtech-flea-market-apps
 
 ## 環境構築
 ### Docker ビルド
 1.  リポジトリをクローンします:
     ```bash
-    'git clone git@github.com:shun1019/confirmation-test2-mogitate.git'
+    'git clone git@github.com:shun1019/coachtech-flea-market-apps.git'
     ```
 2.  DockerDesktop アプリを立ち上げる:
     ```bash

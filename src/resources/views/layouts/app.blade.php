@@ -3,26 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mogitate</title>
-    <link rel="stylesheet" href="{{ asset('css/common.css')}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>@yield('title')</title>
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
     @yield('css')
 </head>
 
 <body>
+
     <header class="header">
-        <a class="header__logo" href="/products">
-            mogitate
+        <a class="header__logo" href="/">
+            <img src="{{ asset('storage/image/logo.svg') }}" alt="COACHTECH">
         </a>
-        @yield('link')
+        <div class="search-bar">
+            <input type="text" placeholder="なにをお探しですか？">
+        </div>
+        <div class="header__nav">
+            <a href="">ログアウト</a>
+            <a href="">マイページ</a>
+            <form action="{{ route('sell') }}" method="GET">
+                <button type="submit">出品</button>
+            </form>
+        </div>
     </header>
-    <div class="content">
-        @yield('content')
-    </div>
+
+    @yield('content')
+
 </body>
 
 </html>

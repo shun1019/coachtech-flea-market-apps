@@ -1,0 +1,87 @@
+.item-detail {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.item-detail__image {
+    flex: 1;
+    text-align: center;
+}
+
+.item-detail__image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.item-detail__info {
+    flex: 2;
+}
+
+.item-detail__info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.item-detail__info .brand {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.item-detail__info .price {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.item-detail__likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.item-detail__likes span {
+    font-size: 18px;
+}
+
+.btn-purchase {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-purchase:hover {
+    background-color: #FF4500;
+}
+
+.comments {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.comment {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-comment {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-comment:hover {
+    background-color: #FF4500;
+}
